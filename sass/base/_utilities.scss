@@ -1,0 +1,40 @@
+/* Variables ---------------------- */
+$default-text-color: #414849;
+$heading-text-color: #454545;
+
+
+/* Mixins ---------------------- */
+
+//Font size
+@mixin font-size($size, $is-important: false) {
+	@if $is-important {
+		font-size: $size + px !important;
+		font-size: ($size / 10) + rem !important;
+	} @else {
+		font-size: $size + px;
+		font-size: ($size / 10) + rem;
+	}
+}
+
+//Font Families
+@mixin defaultFontFamily {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+}
+
+@mixin headingFont {
+	color: $heading-text-color;
+	font-family: 'News Cycle', sans-serif;
+}
+
+//Universal Clear
+
+@mixin clear {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+* {
+	-webkit-padding-start: 0px;
+}
