@@ -3,6 +3,25 @@ body {
 	@include defaultFontFamily;
 }
 
+hr {
+	padding: 0;
+	margin: 0;
+}
+
+.top-hr {
+	border: none;
+	background: url(../images/top-hr.png) repeat-x;
+	height: 8px;
+	margin-bottom: 14px;
+}
+
+.bottom-hr {
+	border: none;
+	background: url(../images/bottom-hr.png) repeat-x;
+	height: 8px;
+	margin-top: 14px;
+}
+
 /* Local Area ---------------------- */
 
 .text_center {
