@@ -1,6 +1,6 @@
 /* Variables ---------------------- */
 $default-text-color: #414849;
-$heading-text-color: #c9583b;
+
 
 
 /* Mixins ---------------------- */
@@ -23,8 +23,16 @@ $heading-text-color: #c9583b;
 }
 
 @mixin headingFont {
-	color: $heading-text-color;
 	font-family: 'News Cycle', sans-serif;
+}
+
+//Background Cover
+
+@mixin background-cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 //Universal Clear

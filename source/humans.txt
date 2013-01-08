@@ -1,0 +1,14 @@
+/* TEAM */
+Your title: Eddie B
+Site: helloworld@5eleven.net
+Twitter: your Twitter username.
+Location: Honolulu, HI
+
+/* THANKS */
+Name: YOU! Thanks for visiting my site!
+
+/* SITE */
+Last update:
+Standards: HTML5, CSS3/Sass/Compass, JavaScript
+Components: Modernizr, jQuery
+Software: Sublime Text 2, Codekit, Git, Github, Jekyll/Octopress
