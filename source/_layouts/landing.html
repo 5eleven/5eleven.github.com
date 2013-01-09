@@ -15,33 +15,30 @@
 		<link href="{{ root_url }}/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
 		<script src="{{ root_url }}/javascripts/modernizr-2.0.min.js"></script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
 		<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 
-		<header>
-			<nav class="row">
-				<ul class="main_nav">
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Whois</a></li>
-					<li><a href="#" class="menu_top_link">Top</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Connect</a></li>
-				</ul>
-			</nav>
 
-		</header>
 
-		<section class="logo_stuff">
+		<nav class="main_nav">
+			<ul class="scroll-nav main-menu">
+				<li><a href="#work">Work</a></li><li><a href="#whois">Whois</a></li><li><a href="#top">Top</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+
+		<header class="logo_stuff">
 			<span class="main_logo">5eleven.net</span>
 			<h1>Designer &amp; Front-End Developer</h1>
 			<h2 class="small">Handcrafted. Made in Hawaii.</h2>
 			<hr class="bottom-hr" />
-		</section>
+		</header>
 
-
-
-		<section class="work_stuff">
+		<section class="work_stuff" id="work">
 			<hr class="top-hr" />
 			<div class="row text_center">
 				<h1>Selected Work</h1>
@@ -133,16 +130,25 @@
 			<hr class="bottom-hr" />
 		</section>
 
-		<section class="whois_stuff">
+		<section class="whois_stuff" id="whois">
 			<hr class="top-hr" />
 			<div class="row text_center">
 				<h1>Whois</h1>
 				<h2 class="small">Web Designer, Developer, Geek, Gamer &amp; Internet Ally</h2>
 			</div>
+
+			<div class="row">
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin erat sapien, hendrerit euismod iaculis quis, volutpat eget urna. Proin a purus eget justo eleifend vehicula id vel metus. Nulla facilisi. Vestibulum et orci sit amet nibh mattis malesuada aliquet vestibulum mi. Vestibulum mauris nisi, pharetra fermentum aliquet nec, vehicula quis leo. Cras quis nisl cursus tellus blandit fringilla eget vitae quam. Pellentesque molestie porttitor tempor. Quisque laoreet, dolor at suscipit porta, eros augue sollicitudin ligula, ac suscipit magna mi et lorem. Nulla lorem ligula, vehicula et suscipit ut, volutpat eget nibh. Etiam at dui enim. Nulla ac metus eros.</p>
+
+					<p>Fusce quis erat odio, in iaculis metus. Nunc augue quam, eleifend vitae luctus venenatis, mollis ac libero. Integer nisl tellus, ullamcorper id ullamcorper eu, accumsan et est. Sed a libero neque. Nunc porttitor lorem eleifend sem scelerisque eleifend. Maecenas vulputate semper vehicula. Cras accumsan aliquet odio quis posuere. Cras malesuada faucibus purus et porttitor. Cras luctus, ante vitae ultricies pellentesque, dolor magna fringilla nisi, vel pharetra nulla purus venenatis diam. In hac habitasse platea dictumst. Aenean feugiat augue et ligula lacinia tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at magna id diam pretium sodales auctor sed mauris.</p>
+				</div>
+			</div>
+
 			<hr class="bottom-hr" />
 		</section>
 
-		<section class="skills_stuff">
+		<section class="skills_stuff" id="skills">
 			<hr class="top-hr" />
 			<div class="row text_center">
 				<h1>Skills</h1>
@@ -191,15 +197,30 @@
 			<hr class="bottom-hr" />
 		</section>
 
-		<section class="contact_stuff">
+		<section class="contact_stuff" id="contact">
 			<hr class="top-hr" />
 			<div class="row text_center">
-				<h1>Contact</h1>
+				<h1>Connect</h1>
 				<h2 class="small">No Spam. Bacon is welcomed.</h2>
 			</div>
+
+			<div class="row">
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin erat sapien, hendrerit euismod iaculis quis, volutpat eget urna. Proin a purus eget justo eleifend vehicula id vel metus. Nulla facilisi. Vestibulum et orci sit amet nibh mattis malesuada aliquet vestibulum mi. Vestibulum mauris nisi, pharetra fermentum aliquet nec, vehicula quis leo. Cras quis nisl cursus tellus blandit fringilla eget vitae quam. Pellentesque molestie porttitor tempor. Quisque laoreet, dolor at suscipit porta, eros augue sollicitudin ligula, ac suscipit magna mi et lorem. Nulla lorem ligula, vehicula et suscipit ut, volutpat eget nibh. Etiam at dui enim. Nulla ac metus eros.</p>
+
+					<p>Fusce quis erat odio, in iaculis metus. Nunc augue quam, eleifend vitae luctus venenatis, mollis ac libero. Integer nisl tellus, ullamcorper id ullamcorper eu, accumsan et est. Sed a libero neque. Nunc porttitor lorem eleifend sem scelerisque eleifend. Maecenas vulputate semper vehicula. Cras accumsan aliquet odio quis posuere. Cras malesuada faucibus purus et porttitor. Cras luctus, ante vitae ultricies pellentesque, dolor magna fringilla nisi, vel pharetra nulla purus venenatis diam. In hac habitasse platea dictumst. Aenean feugiat augue et ligula lacinia tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at magna id diam pretium sodales auctor sed mauris.</p>
+				</div>
+			</div>
+
 		</section>
 
 		<footer></footer>
+
+		<!-- JS -->
+
+		<script src="{{ root_url }}/javascripts/home-functions.js"></script>
+		<script src="{{ root_url }}/javascripts/waypoints.min.js"></script>
+		<script src="{{ root_url }}/javascripts/jquery.easing.1.3.min.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
