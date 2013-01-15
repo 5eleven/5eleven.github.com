@@ -20,17 +20,7 @@
 
 		<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
 
-<script>
-	if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i)) {
-	var viewportmeta = document.querySelector('meta[name="viewport"]');
-	if (viewportmeta) {
-		viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
-		document.body.addEventListener('gesturestart', function () {
-		viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
-		}, false);
-	}
-	}
-</script>
+
 
 
 	</head>
@@ -39,9 +29,15 @@
 
 
 		<nav class="main_nav">
+
+			<span class="menu-logo">
+				<a href="#top" class="top-logo">Top</a>
+			</span>
+
 			<ul class="scroll-nav main-menu">
-				<li><a href="#work">Work</a></li><li><a href="#whois">Whois</a></li><li><a href="#top">Top</a></li><li><a href="#skills">Skills</a></li><li><a href="#connect">Connect</a></li>
+				<li><a href="#work">Work</a></li><li><a href="#whois">Whois</a></li><li><a href="#skills">Skills</a></li><li><a href="#connect">Connect</a></li>
 			</ul>
+
 		</nav>
 
 
@@ -86,11 +82,6 @@
 				</div>
 			</div>
 
-			<hr class="bottom-hr" />
-		</section>
-
-		<section class="project_stuff">
-			<hr class="top-hr" />
 			<div class="row text_center">
 				<h1>Other Projects I've worked on...</h1>
 				<h2 class="small">At Design Agencies, In-House, &amp; Freelancing</h2>
