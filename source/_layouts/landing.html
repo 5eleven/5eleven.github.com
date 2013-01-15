@@ -16,17 +16,31 @@
 
 		<script src="{{ root_url }}/js/modernizr.min.js"></script>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
 		<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+
+<script>
+	if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i)) {
+	var viewportmeta = document.querySelector('meta[name="viewport"]');
+	if (viewportmeta) {
+		viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
+		document.body.addEventListener('gesturestart', function () {
+		viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+		}, false);
+	}
+	}
+</script>
+
+
 	</head>
-	<body>
+	<body id="top">
 
 
 
 		<nav class="main_nav">
 			<ul class="scroll-nav main-menu">
-				<li><a href="#work">Work</a></li><li><a href="#whois">Whois</a></li><li><a href="#top">Top</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
+				<li><a href="#work">Work</a></li><li><a href="#whois">Whois</a></li><li><a href="#top">Top</a></li><li><a href="#skills">Skills</a></li><li><a href="#connect">Connect</a></li>
 			</ul>
 		</nav>
 
@@ -38,7 +52,7 @@
 			<hr class="bottom-hr" />
 		</header>
 
-		<section class="work_stuff" id="work">
+		<section class="work_stuff stuffs" id="work">
 			<hr class="top-hr" />
 			<div class="row text_center">
 				<h1>Selected Work</h1>
@@ -82,6 +96,7 @@
 				<h2 class="small">At Design Agencies, In-House, &amp; Freelancing</h2>
 			</div>
 			<div class="row">
+				<div class="twelve columns">
 				<ul class="block-grid mobile three-up">
 					<li>9th MSC/US Army Reserves</li>
 					<li>African American Diversity Cultural Center</li>
@@ -138,7 +153,7 @@
 			</div>
 
 			<div class="row">
-				<div class="row">
+				<div class="twelve columns">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin erat sapien, hendrerit euismod iaculis quis, volutpat eget urna. Proin a purus eget justo eleifend vehicula id vel metus. Nulla facilisi. Vestibulum et orci sit amet nibh mattis malesuada aliquet vestibulum mi. Vestibulum mauris nisi, pharetra fermentum aliquet nec, vehicula quis leo. Cras quis nisl cursus tellus blandit fringilla eget vitae quam. Pellentesque molestie porttitor tempor. Quisque laoreet, dolor at suscipit porta, eros augue sollicitudin ligula, ac suscipit magna mi et lorem. Nulla lorem ligula, vehicula et suscipit ut, volutpat eget nibh. Etiam at dui enim. Nulla ac metus eros.</p>
 
 					<p>Fusce quis erat odio, in iaculis metus. Nunc augue quam, eleifend vitae luctus venenatis, mollis ac libero. Integer nisl tellus, ullamcorper id ullamcorper eu, accumsan et est. Sed a libero neque. Nunc porttitor lorem eleifend sem scelerisque eleifend. Maecenas vulputate semper vehicula. Cras accumsan aliquet odio quis posuere. Cras malesuada faucibus purus et porttitor. Cras luctus, ante vitae ultricies pellentesque, dolor magna fringilla nisi, vel pharetra nulla purus venenatis diam. In hac habitasse platea dictumst. Aenean feugiat augue et ligula lacinia tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at magna id diam pretium sodales auctor sed mauris.</p>
@@ -197,7 +212,7 @@
 			<hr class="bottom-hr" />
 		</section>
 
-		<section class="contact_stuff" id="contact">
+		<section class="connect_stuff" id="connect">
 			<hr class="top-hr" />
 			<div class="row text_center">
 				<h1>Connect</h1>
@@ -205,7 +220,7 @@
 			</div>
 
 			<div class="row">
-				<div class="row">
+				<div class="twelve columns">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin erat sapien, hendrerit euismod iaculis quis, volutpat eget urna. Proin a purus eget justo eleifend vehicula id vel metus. Nulla facilisi. Vestibulum et orci sit amet nibh mattis malesuada aliquet vestibulum mi. Vestibulum mauris nisi, pharetra fermentum aliquet nec, vehicula quis leo. Cras quis nisl cursus tellus blandit fringilla eget vitae quam. Pellentesque molestie porttitor tempor. Quisque laoreet, dolor at suscipit porta, eros augue sollicitudin ligula, ac suscipit magna mi et lorem. Nulla lorem ligula, vehicula et suscipit ut, volutpat eget nibh. Etiam at dui enim. Nulla ac metus eros.</p>
 
 					<p>Fusce quis erat odio, in iaculis metus. Nunc augue quam, eleifend vitae luctus venenatis, mollis ac libero. Integer nisl tellus, ullamcorper id ullamcorper eu, accumsan et est. Sed a libero neque. Nunc porttitor lorem eleifend sem scelerisque eleifend. Maecenas vulputate semper vehicula. Cras accumsan aliquet odio quis posuere. Cras malesuada faucibus purus et porttitor. Cras luctus, ante vitae ultricies pellentesque, dolor magna fringilla nisi, vel pharetra nulla purus venenatis diam. In hac habitasse platea dictumst. Aenean feugiat augue et ligula lacinia tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at magna id diam pretium sodales auctor sed mauris.</p>
