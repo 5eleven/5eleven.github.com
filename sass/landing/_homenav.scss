@@ -1,12 +1,12 @@
 .main_nav {
 	background: #202024;
 	box-shadow: 0px 2px 10px rgba(50, 50, 50, 0.50);
-	border-bottom: #2d2d32 1px solid;
+	border-bottom: #2d2d32 2px solid;
 	width: 100%;
 	z-index: 100;
 	position: fixed;
 	top: 0;
-	right: 0;
+	left: 0;
 	ul {
 		text-align: center;
 		background: #202024;
@@ -17,11 +17,17 @@
 			display:inline-block;
 			&:nth-child(3) {
 				a {
-					background: #1a1a1a;
+					background: #1a1a1a url(../images/menu-logo.png) no-repeat center;
 					width: 75px;
 					position: relative;
 					text-indent: -9999px;
 					overflow: hidden;
+					background-size: 50px 35px;
+					&:hover {
+						background: #149bc2 url(../images/menu-logo.png) no-repeat center;
+						background-size: 50px 35px;
+						border-bottom: none;
+					}
 				}
 			}
 			a {
@@ -38,7 +44,6 @@
 				text-transform: uppercase;
 				&:hover {
 					background: #242428;
-					border-bottom: #0e6d88 2px solid;
 				}
 				&.active {
 					background: #2f2f35;
@@ -84,19 +89,63 @@
 				height: auto;
 				float: left;
 				width: 20%;
+				&:nth-child(1) {
+					a {
+						background: url(../images/work-icon.png) no-repeat center 7px;
+						background-size: 18px 18px;
+						&.active {
+							background: url(../images/work-icon-active.png) no-repeat center 7px;
+							background-size: 18px 18px;
+						}
+					}
+				}
+				&:nth-child(2) {
+					a {
+						background: url(../images/whois-icon.png) no-repeat center 7px;
+						background-size: 18px 18px;
+						&.active {
+							background: url(../images/whois-icon-active.png) no-repeat center 7px;
+							background-size: 18px 18px;
+						}
+					}
+				}
 				&:nth-child(3) {
 					a {
 						width: 100%;
+						&:hover {
+							background: #1a1a1a url(../images/menu-logo.png) no-repeat center;
+							background-size: 50px 35px;
+						}
+					}
+				}
+				&:nth-child(4) {
+					a {
+						background: url(../images/skills-icon.png) no-repeat center 7px;
+						background-size: 18px 18px;
+						&.active {
+							background: url(../images/skills-icon-active.png) no-repeat center 7px;
+							background-size: 18px 18px;
+						}
+					}
+				}
+				&:nth-child(5) {
+					a {
+						background: url(../images/connect-icon.png) no-repeat center 7px;
+						background-size: 18px 18px;
+						&.active {
+							background: url(../images/connect-icon-active.png) no-repeat center 7px;
+							background-size: 18px 18px;
+						}
 					}
 				}
 				a {
 					@include font-size(7);
-					padding-top: 12px;
+					padding-top: 13px;
 					width: 100%;
 					text-transform: none;
 					font-weight: normal;
 					&:hover {
-						color: auto;
+
 					}
 				}
 			}
