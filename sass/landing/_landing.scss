@@ -1,11 +1,18 @@
 /* Logo Area ---------------------- */
 
 .logo_stuff {
+	padding: 100px 0;
 	text-align: center;
-	padding-top: 70px;
-	background: url(../images/logo-stuff-bg.jpg) repeat-x;
+	background: url(../images/headerbg2.jpg) no-repeat center bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: #454545;
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+	h1 {
+		margin-bottom: 14px;
+	}
+
 }
 
 .main_logo {
@@ -16,14 +23,19 @@
 	width: 275px;
 	text-indent: -9999px;
 	overflow: hidden;
+	margin-bottom: 14px;
 }
 
-
+@media only screen and (max-width: 767px) {
+	.logo_stuff {
+		padding: 60px 0;
+	}
+}
 
 /* Work Stuff ---------------------- */
 
 .work_stuff {
-	background: #e5e5e5;
+
 }
 
 .work-link {
@@ -41,7 +53,7 @@
 /* Skills Stuff ---------------------- */
 .skills_stuff {
 	color: #fff;
-	background: url(../images/skills-bg.jpg) center;
+
 }
 
 .skills-img {

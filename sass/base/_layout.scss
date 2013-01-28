@@ -1,5 +1,6 @@
 body {
 	@include defaultFontFamily;
+	color: $default-text-color;
 }
 
 hr {

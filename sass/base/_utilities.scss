@@ -1,5 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+
 /* Variables ---------------------- */
-$default-text-color: #414849;
+$default-text-color: #6f6f6f;
 
 //Color Pallet
 $turquoise: #242428;
@@ -34,7 +37,8 @@ $gray-shadow: #17171a;
 }
 
 @mixin headingFont {
-	font-family: 'News Cycle', sans-serif;
+	font-family: 'Abril Fatface', cursive;
+	color: #000;
 }
 
 //Background Cover

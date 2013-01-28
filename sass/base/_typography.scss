@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+
 
 // For Later
 // http://bueltge.de/free-web-font-combinations/
@@ -29,7 +29,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 }
 
 p {
-	@include font-size(10.5);
+	@include font-size(10);
 	line-height: 1.5;
 	margin-bottom: 20px;
 	&.lead {
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	@include font-size(22);
+	@include font-size(26);
 }
 
 h2 {
