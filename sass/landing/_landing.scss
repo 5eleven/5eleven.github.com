@@ -1,7 +1,11 @@
+.waypoint {
+	padding: 100px 0;
+}
+
 /* Logo Area ---------------------- */
 
 .logo_stuff {
-	padding: 100px 0;
+	padding: 90px 0;
 	text-align: center;
 	background: url(../images/headerbg2.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
@@ -12,7 +16,6 @@
 	h1 {
 		margin-bottom: 14px;
 	}
-
 }
 
 .main_logo {
@@ -49,9 +52,13 @@
 
 /* Whois Stuff ---------------------- */
 
+.whois_stuff {
+	background: $gray-shadow;
+}
 
 /* Skills Stuff ---------------------- */
 .skills_stuff {
+	background: url(../images/skills-bg.jpg);
 	color: #fff;
 
 }
@@ -69,4 +76,26 @@
 	&.git-r-done {
 		background-image: url(../images/skills-511energy.png);
 	}
+}
+
+/* Footer Stuff ---------------------- */
+
+footer {
+	color: #fff;
+	background: $turquoise;
+	text-align: center;
+	padding: 100px 0;
+	h6 {
+		color: #fff;
+		letter-spacing: .1rem;
+	}
+}
+
+.copyrights-n-shit {
+	@include font-size(7.5);
+	text-transform: uppercase;
+	span {
+		letter-spacing: .2rem;
+	}
+
 }
