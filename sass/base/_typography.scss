@@ -6,11 +6,11 @@
 /* Links ---------------------- */
 
 a {
-	color: #217d99;
+	color: $orange;
 	text-decoration: none;
 	line-height: inherit;
 	&:hover {
-		color: #2795b6; }
+		color: $orange-shadow; }
 	&:focus {
 		color: #2ba6cb;
 		outline: none; } }
@@ -29,8 +29,8 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 }
 
 p {
-	@include font-size(10);
-	line-height: 1.5;
+	@include font-size(10.5);
+	line-height: 1.8;
 	margin-bottom: 20px;
 	&.lead {
 		font-size: 17.5px;
@@ -55,17 +55,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: nomral;
 	text-rendering: optimizeLegibility;
 	@include headingFont;
-	color: #39393d;
+	color: $light-gray;
 }
 
 h1 {
 	@include font-size(26);
+	padding: 0 0 20px 0;
 }
 
 h2 {
 	@include font-size(20);
 	&.small {
 		@extend h6;
+		padding: 0 0 20px 0;
 	}
 }
 

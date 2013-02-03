@@ -2,19 +2,25 @@
 	padding: 100px 0;
 }
 
+@media only screen and (max-width: 767px) {
+	.waypoint {
+		padding: 60px 0;
+	}
+}
+
 /* Logo Area ---------------------- */
 
 .logo_stuff {
 	padding: 90px 0;
 	text-align: center;
-	background: url(../images/headerbg2.jpg) no-repeat center bottom;
+	background: #fefefe url(../images/headerbg2.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	color: #454545;
+	border-bottom: #020202 2px solid;
 	h1 {
-		margin-bottom: 14px;
 	}
 }
 
@@ -29,9 +35,40 @@
 	margin-bottom: 14px;
 }
 
+.heading-social {
+	padding-bottom: 14px;
+	li {
+		display: inline;
+		a {
+			display: inline-block;
+			text-indent: -9999px;
+			overflow: hidden;
+			background: $light-gray;
+			height: 40px;
+			width: 40px;
+			margin: 0 5px;
+			border-radius: 30px;
+			&:hover {
+				background: $orange;
+			}
+		}
+	}
+}
+
 @media only screen and (max-width: 767px) {
 	.logo_stuff {
 		padding: 60px 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.logo_stuff {
+		h2 {
+			margin: 0 0 14px 0;
+			span {
+				display: block;
+			}
+		}
 	}
 }
 
@@ -53,14 +90,30 @@
 /* Whois Stuff ---------------------- */
 
 .whois_stuff {
-	background: $gray-shadow;
+	background: $gray;
+	color: $tan;
+	h1, h2 {
+		color: $tan;
+	}
 }
 
 /* Skills Stuff ---------------------- */
 .skills_stuff {
-	background: url(../images/skills-bg.jpg);
+	background: $turquoise url(../images/skills-bg.jpg);
 	color: #fff;
-
+	h1, h2, h4 {
+		color: #fff;
+	}
+	h4 {
+		padding: 10px 0;
+	}
+	ul {
+		padding: 5px 0;
+		li {
+			padding: 3px 0;
+			display: block;
+		}
+	}
 }
 
 .skills-img {
@@ -78,11 +131,35 @@
 	}
 }
 
+/* Connect Stuff ---------------------- */
+
+.availability {
+	border-top: #ccc 1px dotted;
+	border-bottom: #ccc 1px dotted;
+	padding: 5px 0;
+}
+
+.available {
+	color: #fff;
+	background: $turquoise;
+	padding: 4px;
+	text-transform: uppercase;
+	@include font-size(7.5)
+}
+
+.not-available {
+	color: #fff;
+	background: $orange;
+	padding: 4px;
+	text-transform: uppercase;
+	@include font-size(7.5)
+}
+
 /* Footer Stuff ---------------------- */
 
 footer {
 	color: #fff;
-	background: $turquoise;
+	background: $orange;
 	text-align: center;
 	padding: 100px 0;
 	h6 {
