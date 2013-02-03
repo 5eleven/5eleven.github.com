@@ -136,23 +136,27 @@
 .availability {
 	border-top: #ccc 1px dotted;
 	border-bottom: #ccc 1px dotted;
-	padding: 5px 0;
+	padding: 6px 0;
+	text-transform: uppercase;
+	@include font-size(7.5)
 }
 
 .available {
 	color: #fff;
 	background: $turquoise;
 	padding: 4px;
-	text-transform: uppercase;
-	@include font-size(7.5)
 }
 
 .not-available {
 	color: #fff;
 	background: $orange;
 	padding: 4px;
-	text-transform: uppercase;
-	@include font-size(7.5)
+}
+
+.getting_social {
+	.small, p {
+		padding: 0;
+	}
 }
 
 /* Footer Stuff ---------------------- */

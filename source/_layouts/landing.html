@@ -21,7 +21,15 @@
 		<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
 
 
-
+		<script type="text/javascript">
+			// Avoid conflict with ender.js.
+			jQuery.noConflict();
+		</script>
+		<!-- jQuery Form Plugin -->
+		<script src="http://malsup.github.com/jquery.form.js"></script>
+		<!-- jQuery Form Validation Plugin -->
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> 
+		<script src="{{ root_url }}/js/google_form.js"></script>
 
 	</head>
 	<body id="top">
@@ -162,8 +170,16 @@
 				<h1>Skills</h1>
 				<h2 class="small">A Potent Brew of Code, Graphics &amp; Caffiene</h2>
 			</div>
+
 			<div class="row">
-				<div class="twelve columns">
+				<div class="seven columns centered">
+					<p>It seems that a lot of designers and developers like to show a graph of skills that shows their strengths and weaknesses. I have no idea how to measure my skills like that and I will show no such thing! I am not saying I am the best at everything I do, but I am also not going to graph weaknesses. Here is a list of things I can do what my work process is like. No, I will not fix your email.</p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="eleven columns centered">
 					<ul class="block-grid mobile three-up text_center">
 						<li>
 							<span class="skills-img main-stuff"></span>
@@ -215,18 +231,23 @@
 			<div class="row">
 				<div class="seven columns centered">
 					<p>
-					I am very selective on what projects to take on. If you want to know what kind of work you will get for "$100", no offense, go to craigslist. I work on an hourly basis and want to make sure our time is maximized effectivly to deliver a great product.</p>
+					I am very selective on what projects to take on. If you want to know what kind of work you will get for "$100", no offense, go to craigslist. I work on an hourly basis and want to make sure time is maximized effectivly to deliver a great product.</p>
 
-					<p class="text_center availability">I am <span class="not-available">Not Available</span> for freelance work.
+					<p class="text_center availability"><span class="not-available">Not Available</span> for freelance work.
 					</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin erat sapien, hendrerit euismod iaculis quis, volutpat eget urna. Proin a purus eget justo eleifend vehicula id vel metus. Nulla facilisi. Vestibulum et orci sit amet nibh mattis malesuada aliquet vestibulum mi. Vestibulum mauris nisi, pharetra fermentum aliquet nec, vehicula quis leo. Cras quis nisl cursus tellus blandit fringilla eget vitae quam. Pellentesque molestie porttitor tempor. Quisque laoreet, dolor at suscipit porta, eros augue sollicitudin ligula, ac suscipit magna mi et lorem. Nulla lorem ligula, vehicula et suscipit ut, volutpat eget nibh. Etiam at dui enim. Nulla ac metus eros.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="seven columns centered">
+					{% google_form 19s2ceDAnKiYSCD04ZdGLD4Nr8LkKlXwSHNCXuc21T3A %}
 				</div>
 			</div>
 
 			<div class="row text_center">
-				<div class="six columns centered">
+				<div class="six columns centered getting_social">
 				<h2 class="small">Getting Social</h2>
-				<p>Follow me and I'll follow back!</p>
+				<p>Follow and I'll follow back!</p>
 			<ul class="heading-social">
 				<li><a href="http://twitter.com/5e11even" target="_blank">Twitter</a></li><li><a href="http://forrst/com/5eleven" target="blank">Forrst</a></li><li><a href="http://dribbble.com/5eleven" target="_blank">Dribbble</a></li><li><a href="#connect">Email</a></li>
 			</ul>
@@ -243,6 +264,7 @@
 		</footer>
 
 		<!-- JS -->
+
 
 		<script src="{{ root_url }}/js/home.main.min.js"></script>
 		<script src="{{ root_url }}/js/waypoints.min.js"></script>
