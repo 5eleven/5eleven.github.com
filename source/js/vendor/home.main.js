@@ -1,4 +1,4 @@
-//Yes I know, my jQuery is bad and I should feel bad! (V)(;,,;)(V)
+//Yes I know, my $ is bad and I should feel bad! (V)(;,,;)(V)
 
 //Smooth Scrolling
 $(function() {
@@ -27,4 +27,16 @@ $(function() {
 	});
 });
 
+$(function() {
+	$('#ss-submit').on('click', function(event) {
+		$('#ss-form').fadeOut();
+		$('.success-msg').fadeToggle();
+		return false;
+	});
+});
+
+//Reference for validation: http://web.enavu.com/tutorials/create-an-amazing-contact-form-with-no-ready-made-plugins/
+//
+//
+//
 
