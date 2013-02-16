@@ -40,9 +40,21 @@ $(function() {
 		e.preventDefault();
 
 		var error = 'false';
+		var name = $('#entry_1842105847').val();
 		var email = $('#entry_1972873101').val();
+		var message = $('#entry_2082639685').val;
+
+		if (name.length == 0) {
+			var error = true;
+			$('.form-error').fadeIn(500);
+		}
 
 		if (email.length == 0 || email.indexOf('@') == '-1') {
+			var error = true;
+			$('.form-error').fadeIn(500);
+		}
+
+		if (message.length == 0) {
 			var error = true;
 			$('.form-error').fadeIn(500);
 		}
@@ -55,7 +67,7 @@ $(function() {
 				success: function(data) {
 					$('#ss-form').fadeOut();
 					$('.success-msg').fadeToggle();
-				},
+				}
 			});
 
 		}
