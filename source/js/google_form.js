@@ -36,3 +36,12 @@ jQuery(document).ready(function() {
 		}
 	});
 });
+
+
+$(function() {
+	$('#ss-submit').on('click', function(event) {
+		$('#ss-form').fadeOut();
+		$('.success-msg').fadeToggle();
+		return false;
+	});
+});
